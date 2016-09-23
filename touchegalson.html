@@ -6,7 +6,7 @@
         <title>Titre</title>
     </head>
     <body>
-        Olala
+        <p>Olala</p>
         <script src="jquery-3.1.0.js"></script> <!-- jQuery est inclus ! -->
         <script src="wad-master/build/wad.js"></script> <!-- wad ! -->
         <script>
@@ -18,10 +18,9 @@
                 console.log(event.charCode);
                 if(event.charCode==32){snare.play();}
                 });
-            $(document).on("click touchstart",function(){
-                snare.play();
-                });
-            });
+             $("p").on("tap",function(){
+  $(this).hide();
+});
         </script>
     </body>
 
