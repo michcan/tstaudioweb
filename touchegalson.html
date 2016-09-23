@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Titre</title>
+    </head>
+    <body>
+        Olala
+        <script src="jquery-3.1.0.js"></script> <!-- jQuery est inclus ! -->
+        <script src="wad-master/build/wad.js"></script> <!-- wad ! -->
+        <script>
+            jQuery(document).ready(function(){
+            var snare = new Wad({source : 'snare.wav'})
+            console.log("jQuery est prêt !");
+            // Du code en jQuery va pouvoir être tapé ici !
+            $(document).keypress(function(event) {
+                console.log(event.charCode);
+                if(event.charCode==32){snare.play();}
+                });
+            });
+
+   </script>
+    </body>
+
+</html>
