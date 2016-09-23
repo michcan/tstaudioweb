@@ -18,10 +18,11 @@
                 console.log(event.charCode);
                 if(event.charCode==32){snare.play();}
                 });
+            $(document).on("tap",function(){
+                $(this).snare.play();
+                })
             });
-
         </script>
-        <input type="texte">
     </body>
 
 </html>
